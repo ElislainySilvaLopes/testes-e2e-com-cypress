@@ -32,7 +32,7 @@ describe('Scenarios where authentication is a pre-requirement', () => {
       expect(response.state).to.equal('Complete')
     })
   })
-  it.only('logs out', () => {
+  it('logs out', () => {
     cy.visit('/')
     cy.wait('@getNotes')
 
